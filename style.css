@@ -1,0 +1,242 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Hanunoo&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Hanunoo&family=Noto+Sans+TC:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-wrap: pretty;
+    /* border: 1px solid red; */
+}
+
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    background-color: #f8f2f4;
+    font-family: "Roboto Condensed", sans-serif;
+    font-optical-sizing: auto;
+}
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 0rem;
+}
+::-webkit-scrollbar{
+    width: 1rem;
+}
+h1,
+h2,
+h3,
+h4,
+h6,
+p {
+    text-wrap: balance;
+}
+
+input,
+textarea,
+button {
+    font-family: inherit
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+:root {
+    --primaryColor: #ffffff;
+    --secondaryColor: #660600;
+    --darkColor: #330300;
+    --lightColor: #ff0f00;
+    --regularFont: 1.4rem;
+    --headingFont: 2rem;
+    --ffPrimary: "Roboto Condensed", sans-serif;
+    --ffSecondary: "Merienda", cursive;
+}
+.align {
+    max-width: 1020px;
+    margin: auto;
+    padding: 0 40rem;
+}
+
+.componentSpacing {
+    padding: 3rem 0;
+}
+.miniPad{
+    padding: 1rem;
+}
+.grid-1{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.grid-2{
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+}
+.grid-3{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.grid-4{
+    display: grid;
+    grid-template-columns: 1fr 3fr 3fr 1fr;
+}
+.dflex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.dflex-col{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.dflex-col-start{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: left;
+}
+/*PARENT CONTAINER STARTS*/
+header{
+    width: 100%;
+    height: auto;
+}
+main{
+    width: 100%;
+    height: auto;
+}
+footer{
+    width: 100%;
+    height: auto;
+}
+/*PARENT CONTAINER ENDS*/
+
+
+.idcardContainer{
+    /* background-color: #660600; */
+    min-height: 100vh;
+    
+}
+.idcard{
+    /* background-color: #056e1f; */
+    /* padding: 10rem 20rem; */
+}
+.logoBody{
+    /* background-color:darkblue; */
+
+}
+.icon{
+    background-color: darkblue;
+}
+.icon img{
+    background-color: yellow;
+    height: 10rem;
+    width: auto;
+}
+.logo{
+    background-color: darkblue;
+}
+.logo img{
+    background-color: yellowgreen;
+    height: 8rem;
+    width: auto;
+    border: 0.5rem solid white;
+    border-radius: 0.2rem;
+    margin-top: 2rem;
+}
+.photo{
+    background-color: rgb(254, 254, 254);
+}
+.pic{
+    background-color: rgb(255, 255, 255);
+    padding: 1rem 0rem;
+}
+.pic img{
+    /* background-color: #a03659; */
+    height: 15rem;
+    width: auto;
+    border-radius: 2rem;
+}
+.text1{
+    /* background-color: #660600; */
+}
+.textDetails{
+    background-color: rgb(255, 255, 255);
+}
+.textDetails h1{
+    /* background-color: rgb(34, 195, 212); */
+    font-weight: 900;
+    /* font-family: "Noto Sans Hanunoo", sans-serif; */
+    font-family: "Noto Sans TC", sans-serif;
+    font-size: 1.6rem;
+}
+.textDetails p{
+    /* background-color: rgb(255, 145, 0); */
+    font-size: 1.2rem;
+    font-family: "Noto Sans TC", sans-serif;
+    font-weight: 500;
+}
+.textDetails h6{
+    /* background-color: rgb(52, 185, 74); */
+    font-size: 1.2rem;
+    font-family: "Kanit", sans-serif;
+    font-weight: 600;
+    padding-bottom: 0.5rem;
+}
+.box1{
+    /* background-color: rgb(7, 7, 132); */
+    /* padding: 0.8rem; */
+    height: 2.5vh;
+}
+.b1{
+    background-color:#065519;
+}
+.b2{
+    background-color: rgb(0, 157, 255);
+}
+.b3{
+    background-color: orangered;
+}
+.b4{
+    background-color: rgb(8, 8, 109);
+}
+
+/*RESPONSIVE DESIGN DEVICES*/
+/*for responsive target the row code(display:grid)*/
+/*Small devices(landscape phones, upto 576px and below)*/
+@media(width <=576px){
+    /* .grid-1,
+    .grid-2,
+    .grid-3,
+    .grid-4{
+        display: grid;
+        grid-template-columns: 1fr;
+    } */
+    .idcardContainer{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+}
+/*Medium devices (tablets, upto 768px and above)*/
+@media (width >=577px) and (width <=768px){}
+
+/*Large devices (Laptops, upto 992px and above) */
+@media (width >=769px) and (width <=992px) {}
+
+
+/* X-Large devices (large desktops, upto 1200px and above)  */
+@media (width >=993px) and (width <=1200px) {}
+
+/* XX-Large devices (larger desktops, upto 1400px and above)  */
+@media (width >=1200px) {}
